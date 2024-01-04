@@ -1,0 +1,1 @@
+import t from"./UserLayouts-f2640706.js";import{o,c as e,w as r,e as a}from"./app-9685c354.js";import"./index-c074b237.js";import"./Header-93316705.js";import"./Footer-e6c0f184.js";import"./_plugin-vue_export-helper-c27b6911.js";const s=a("h1",null,"mm",-1),d={__name:"Dashboard",setup(m){return(_,c)=>(o(),e(t,null,{default:r(()=>[s]),_:1}))}};export{d as default};
