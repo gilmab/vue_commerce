@@ -7,6 +7,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\User\CheckoutController;
 use App\Http\Controllers\User\ProductListController;
+use App\Http\Controllers\Portfolio ;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\DashboardController ;
 use Illuminate\Foundation\Application;
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 //user rotues
+
+Route::get('/portfolio', [Portfolio::class,'index'])->name('portfolio.home');
 
 Route::get('/', [UserController::class,'index'])->name('user.home');
 

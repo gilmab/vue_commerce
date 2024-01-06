@@ -194,15 +194,25 @@ function submit() {
             </tbody>
           </table>
 
+          <div class="text-center">
+            <h1 class=""><strong>Total des achats: </strong> {{ total }} euros</h1>
+          </div>
+
           <!-- end of list -->
         </div>
         <div
           class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-            Résumé de votre commande
-          </h2>
-          <p class="leading-relaxed mb-5 text-gray-600">Total : {{ total }} €</p>
+          <h1 class="text-gray-900 text-lg mb-1 font-medium title-font">
+            Pour poursuivre vos achats veuillez remplir ce formulaire
+          </h1>
+          <h2 style="color: blue">Ensuite cliquez sur Continue</h2>
+          <br />
+          <br />
+
+          <p class="leading-relaxed mb-5 text-gray-600">
+            <strong> Total des achats </strong> : {{ total }} €
+          </p>
           <div v-for="user in userAdress" :key="user.id">
             <p class="leading-relaxed mb-5 text-gray-600">
               1234 st example, usa, ny {{ user.address1 }}
@@ -298,7 +308,7 @@ function submit() {
               type="submit"
               class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
             >
-              Add address to continue
+              Finissez l'achat
             </button>
           </form>
 
